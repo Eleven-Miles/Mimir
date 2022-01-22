@@ -1,32 +1,15 @@
 {
-  "name": "nanosoup/mimir",
+  "name": "tj-digital/mimir",
   "license": "Unlicense",
   "description": "Skeleton for modern Wordpress development",
   "type": "project",
-  "authors": [
-    {
-      "name": "Jez Emery",
-      "email": "github@hiohzo.com"
-    },
-    {
-      "name": "Harry Wiseman",
-      "email": "enquiries@harry-wiseman.co.uk"
-    }
-  ],
-  "minimum-stability": "dev",
-  "autoload": {
-    "psr-4": {
-      "Mimir\\": "scripts/composer/",
-      "Timber\\": "vendor/timber/timber/lib/"
-    }
-  },
   "require": {
     "php": ">=7.2.0",
     "ext-zip": "*",
     "symfony/dotenv": "^4.2@dev",
-    "nanosoup/nemesis": "dev-master",
-    "nanosoup/zeus": "dev-master",
-    "nanosoup/erebus": "dev-master",
+    "tj-digital/nemesis": "dev-master",
+    "tj-digital/zeus": "dev-master",
+    "tj-digital/erebus": "dev-master",
     "twig/twig": "^2.7.1",
     "wp-cli/wp-cli-bundle": "^2.1@dev",
     "timber/timber": "dev-master",
@@ -44,9 +27,22 @@
     "symfony/debug": "^4.2@dev",
     "hellonico/timber-dump-extension": "dev-master"
   },
+  "authors": [
+    {
+      "name": "TJ Digital",
+      "email": "dev@thinkingjuice.co.uk"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Mimir\\": "scripts/composer/",
+      "Timber\\": "vendor/timber/timber/lib/"
+    }
+  },
   "config": {
     "preferred-install": {
-      "nanosoup/erebus": "dist"
+      "tj-digital/erebus": "dist"
     }
   },
   "repositories": [
@@ -90,7 +86,7 @@
   "extra": {
     "installer-paths": {
       "wp-content/themes/{$name}": [
-        "nanosoup/erebus"
+        "tj-digital/erebus"
       ]
     }
   }
