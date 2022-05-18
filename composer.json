@@ -13,10 +13,6 @@
     "twig/twig": "^2.7.1",
     "wp-cli/wp-cli-bundle": "^2.1@dev",
     "timber/timber": "dev-master",
-    "wpackagist-plugin/wp-mail-smtp": "^1",
-    "wpackagist-plugin/wordpress-seo": "*",
-    "wpackagist-plugin/redis-cache": "*",
-    "wpackagist-plugin/duracelltomi-google-tag-manager": "*"
   },
   "require-dev": {
     "roave/security-advisories": "dev-master",
