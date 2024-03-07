@@ -1,66 +1,38 @@
 {
-  "name": "tj-digital/mimir",
-  "license": "Unlicense",
-  "description": "Skeleton for modern Wordpress development",
-  "type": "project",
-  "require": {
-    "php": ">=7.2.0",
-    "ext-zip": "*",
-    "symfony/dotenv": "^4.2@dev",
-    "tj-digital/nemesis": "dev-master",
-    "tj-digital/zeus": "dev-master",
-    "tj-digital/erebus": "dev-master",
-    "twig/twig": "^2.7.1",
-    "wp-cli/wp-cli-bundle": "^2.1@dev",
-    "timber/timber": "dev-master"
-  },
-  "require-dev": {
-    "roave/security-advisories": "dev-master",
-    "symfony/var-dumper": "^4.2@dev",
-    "symfony/debug": "^4.2@dev",
-    "hellonico/timber-dump-extension": "dev-master"
-  },
-  "authors": [
-    {
-      "name": "TJ Digital",
-      "email": "dev@thinkingjuice.co.uk"
+    "name": "eleven-miles/mimir",
+    "license": "Unlicense",
+    "description": "A WordPress skeleton installation template with WP CLI integration for modern Wordpress development",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Eleven Miles",
+            "email": "dev@elevenmiles.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "wp-cli/wp-cli-bundle": "*",
+        "symfony/dotenv": "^7.0",
+        "timber/timber": "^2.0",
+        "eleven-miles/zeus": "^1.2",
+        "eleven-miles/nemesis": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mimir\\": "scripts/"
+        }
+    },
+    "scripts": {
+        "wp-post-project-install": [
+            "Mimir\\WordPress::install"
+        ],
+        "post-create-project-cmd": [
+            "@wp-post-project-install"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
     }
-  ],
-  "minimum-stability": "dev",
-  "autoload": {
-    "psr-4": {
-      "Mimir\\": "scripts/composer/",
-      "Timber\\": "vendor/timber/timber/lib/"
-    }
-  },
-  "config": {
-    "preferred-install": {
-      "tj-digital/erebus": "dist"
-    }
-  },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://wpackagist.org"
-    }
-  ],
-  "scripts": {
-    "install-wordpress": "wp core download --locale=en_GB --skip-content --force",
-    "capture-creds": "Mimir\\DotEnv::postProjectCreate",
-    "create-wordpress-db": "wp db create || true",
-    "wp-post-install": "Mimir\\Wordpress::postProjectInstall",
-    "post-create-project-cmd": [
-      "@install-wordpress",
-      "@capture-creds",
-      "@create-wordpress-db",
-      "@wp-post-install"
-    ]
-  },
-  "extra": {
-    "installer-paths": {
-      "wp-content/themes/{$name}": [
-        "tj-digital/erebus"
-      ]
-    }
-  }
 }
