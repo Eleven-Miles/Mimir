@@ -17,7 +17,7 @@ class Wordpress
     private static $site_url = '';
     private static $admin_username = '';
     private static $admin_password = '';
-    private static $theme_package = 'tj-digital/erebus';
+    private static $theme_package = 'eleven-miles/erebus';
 
     public static function install(Event $event)
     {

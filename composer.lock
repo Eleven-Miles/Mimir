@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "411977c67118a3b77a77833d967e0126",
+    "content-hash": "bb1cd45e16fafc5cd3bb151955627599",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -157,16 +157,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.7.1",
+            "version": "2.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "aaf6ed5ccd27c23f79a545e351b4d7842a99d0bc"
+                "reference": "b826edb791571ab1eaf281eb1bd6e181a1192adc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/aaf6ed5ccd27c23f79a545e351b4d7842a99d0bc",
-                "reference": "aaf6ed5ccd27c23f79a545e351b4d7842a99d0bc",
+                "url": "https://api.github.com/repos/composer/composer/zipball/b826edb791571ab1eaf281eb1bd6e181a1192adc",
+                "reference": "b826edb791571ab1eaf281eb1bd6e181a1192adc",
                 "shasum": ""
             },
             "require": {
@@ -251,7 +251,7 @@
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
                 "security": "https://github.com/composer/composer/security/policy",
-                "source": "https://github.com/composer/composer/tree/2.7.1"
+                "source": "https://github.com/composer/composer/tree/2.7.2"
             },
             "funding": [
                 {
@@ -267,7 +267,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-09T14:26:28+00:00"
+            "time": "2024-03-11T16:12:18+00:00"
         },
         {
             "name": "composer/installers",
@@ -881,20 +881,20 @@
         },
         {
             "name": "eleven-miles/zeus",
-            "version": "v1.2.0",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Eleven-Miles/Zeus.git",
-                "reference": "f941205fd6ec0bd04bf58126cb035f89a4bdd9ff"
+                "reference": "4064d411b3e316fc52820ab1600e315bf384ede5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Eleven-Miles/Zeus/zipball/f941205fd6ec0bd04bf58126cb035f89a4bdd9ff",
-                "reference": "f941205fd6ec0bd04bf58126cb035f89a4bdd9ff",
+                "url": "https://api.github.com/repos/Eleven-Miles/Zeus/zipball/4064d411b3e316fc52820ab1600e315bf384ede5",
+                "reference": "4064d411b3e316fc52820ab1600e315bf384ede5",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "exussum12/coverage-checker": "^0.11.0",
@@ -915,9 +915,9 @@
             ],
             "description": "Zeus Bundle",
             "support": {
-                "source": "https://github.com/Eleven-Miles/Zeus/tree/v1.2.0"
+                "source": "https://github.com/Eleven-Miles/Zeus/tree/v1.3.0"
             },
-            "time": "2022-09-26T14:58:46+00:00"
+            "time": "2024-03-11T16:46:38+00:00"
         },
         {
             "name": "gettext/gettext",
